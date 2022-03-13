@@ -1,0 +1,15 @@
+﻿<Window x:Class="BindTextbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BindTextbox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        
+        <TextBox HorizontalAlignment="Left" Height="65" Margin="230,40,0,0" TextWrapping="Wrap" Text="{Binding Path = 'PassText', Mode=OneWay}" VerticalAlignment="Top" Width="135" Name="myBindedText_Read"/>
+        <TextBox HorizontalAlignment="Left" Height="65" Margin="45,40,0,0" TextWrapping="Wrap" Text="This is the higher layer text." VerticalAlignment="Top" Width="120" Name="myBindedText_Write"/>
+
+    </Grid>
+</Window>
